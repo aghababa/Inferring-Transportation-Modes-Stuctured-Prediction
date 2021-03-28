@@ -14,4 +14,4 @@ as well as an idea from the following paper by Jeff Phillips and Tang
 
 "Jeff M. Phillips and Pingfan Tang. Simple distances for trajectories via landmarks. In ACM GIS SIGSPATIAL, 2019".
 
-The best one has got 76% accuracy, 
+I will compare my multi-class classification result with those in the literature. 
