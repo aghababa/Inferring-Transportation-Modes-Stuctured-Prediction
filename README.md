@@ -2,7 +2,7 @@
 
 ## @ By Hasan Pourmahmood on March 27, 2021
 
-### This is the repository for my "Geolife Transportation Modes" project in Structured Prediction course at University of Utah taken in Spring 2021.
+### This is the repository for my "Geolife Transportation Modes" project in Structured Prediction course at the University of Utah taken in Spring 2021.
 
 I'm using the "Geolife trajectory dataset", released by Microsoft in 2012, to predict the transportation mode of a given trajectory. The methods I will try to apply are some supervised techniques from structured prediction course, like HMM, CMM, CRF, structured SVM, etc. In fact, I have to decide which model is appropriate for a trajectory dataset. 
 
