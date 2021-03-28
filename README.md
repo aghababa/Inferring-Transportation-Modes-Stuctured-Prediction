@@ -6,7 +6,7 @@
 
 I'm using the "Geolife trajectory dataset", released by Microsoft in 2012, to predict the transportation modes of a given trajectory. The data set is available for public here:
 
-https://www.microsoft.com/en-us/download/details.aspx?id=52367
+https://msropendata.com/datasets/d19b353b-7483-4db7-a828-b130f6d1f035
 
 The methods I will try to apply are some supervised techniques from structured prediction course, like HMM, CMM, CRF, structured SVM, etc. In fact, I have to decide which model is appropriate for a trajectory dataset. 
 
