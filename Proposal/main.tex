@@ -1,0 +1,71 @@
+\documentclass[11pt]{myclass}
+
+\usepackage{amssymb,amsmath,amsfonts,pdfpages,color, url}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{multirow}
+
+\newtheorem{cor}[theorem]{Corollary}
+\newtheorem{rem}{Remark}[section]
+\newtheorem{addendum}[theorem]{Addendum}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exa}{Example}[section]
+\newtheorem{Notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{convention}[theorem]{Convention}
+\newtheorem{Assumption}[theorem]{Assumption}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+
+\def\dis{\mathop{\displaystyle}}
+\def\Train{\mathop{\rm Train}}
+\def\Test{\mathop{\rm Test}}
+\newcommand{\bb}{\ensuremath{{\rm{\bf b}}}}
+\newcommand{\w}{\ensuremath{{\rm{\bf w}}}}
+\def\Gsim{\mathop{\Gamma}}
+
+%%% ----------------------------------------------------------------------
+
+
+\begin{document}
+
+
+\title{Structured Prediction Project Proposal \\ Title: Inferring Transportation modes from GPS Trajectories}
+
+\author{Sole Team Member: Hasan Pourmahmoodaghababa \\ %University of Utah \\ 
+\texttt{uID: u1255635}}
+
+
+
+
+\maketitle
+
+\section{The problem}
+
+Predicting transportation modes is a hot topic in transportation research area and has attracted the attention of many researchers in recent years (as the publishing dates of the refereed papers show) and thus seems interesting to me. I would like to use some techniques from this course to predict transportation modes of a GPS trajectory. This is a supervised structured learning problem. In fact, I want to use 70/30 train/test split and try to learn the parameters of the model(s) that I will propose. 
+
+In the literature, this task is usually done with neural networks or other machine learning techniques like SVM or Random Forest in order to classify trajectories as a multi-class classification task (see for example \cite{DH2018, BCIJ2012, PGL2020, XCZ2019}) and so they are not structured prediction tasks. I will try to predict the transportation modes of each part (like a span in a sentence but related to the same transportation mode) of a long trajectory or maybe for each line segment of a trajectory. I found one paper predicting transportation modes using HMM but I was unable to download it (\cite{LS2020}). 
+
+\section{The data}
+
+The dataset I would like to use is the ``GPS Trajectories with transportation mode labels" released by Microsoft in 2010. This is a subset of a large dataset, called Geolife Trajectory data, which consists of 182 users and is collected in Beijing. The labeled data which I will use consists of 24 users. Each user has a number of trajectories and each trajectory has a set of transportation mode labels (e.g. car, bus, bike, walk, train). Each trajectory is a sequence of triples (latitude, longitude, time)'s. However, as I have to assign the correct label from label set to each part of trajectory, I guess, the data will need a huge amount of preprocessing steps and can be challenging. The data is available to public:   
+
+\url{https://www.microsoft.com/en-us/research/publication/}
+
+\hspace{1.3cm} \url{gps-trajectories-with-transportation-mode-labels/}
+
+\section{Your approach}
+
+My approach is to use one or two structured prediction models such as HMM, MEMM, CRF, etc. to predict transportation modes of all segments of a trajectory through a segmentation according to the labels of segments. 
+I am also interested in predicting transportation modes of any line segment of a trajectory using aforementioned techniques (if time allows). I guess the latter is a new task and is not done by means of any methods. As I want to employ other techniques to predict the transportation modes, I am interested in understanding which technique can do a better job. 
+In fact, my idea is to apply a similar idea of P-O-S tagging task for sentences in NLP to trajectories. Each trajectory can be considered as a sentence, where words are segments, i.e. spans of a trajectory. The states will be predicted by the proposed model from label set (car, bus, bike, walk, train) like (noun, verb, adjective, etc.) in P-O-S. 
+
+\section{Evaluation}
+
+Evaluation can be done by comparing the results of different approaches in the literature. So, I can compare the results with the results of the papers referenced below, for instance. Or, if I were lucky and could apply more than one model, depending on time, I can compare them against each other. To be honest, I am not sure how the model(s) I will choose will perform on a GPS trajectory data as it seems to be a new approach but I would like to examine it. By the way, if it works well, it can be a neat technique in transportation research area. 
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
