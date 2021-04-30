@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{DH2018}
+Sina Dabiri and Kevin Heaslip.
+\newblock Inferring transportation modes from gps trajectories using a
+  convolutional neural network.
+\newblock {\em Transportation Research Part C}, 86:360--371, 2018.
+
+\bibitem{DCHR2020}
+Sina Dabiri, Chang-Tien Lu, Kevin Heaslip, and Chandan~K. Reddy.
+\newblock Semi-supervised deep learning approach for transportation mode
+  identification using gps trajectory data.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  32:1010--1023, 2020.
+
+\bibitem{ETNK2016}
+Yuki Endo, Hiroyuki Toda, Kyosuke Nishida, and Akihisa Kawanobe.
+\newblock Identifying different transportation modes from trajectory data using
+  tree-based ensemble classifiers.
+\newblock {\em Pacific-Asia Conference on Knowledge Discovery and Data Mining},
+  6:54--66, 2016.
+
+\bibitem{LH2014}
+Miao Lin and Wen-Jing Hsu.
+\newblock Mining gps data for mobility patterns.
+\newblock {\em Pervasive Mob. Comput.}, 12:1 -- 16, 2014.
+
+\bibitem{LS2020}
+Li~Meng and Shen Zhang.
+\newblock Inferring travel modes from trajectory data based on hidden markov
+  model.
+\newblock {\em International Conference on Transportation and Development
+  2020}, 7:95 -- 103, 2020.
+
+\bibitem{PT19a}
+Jeff~M. Phillips and Pingfan Tang.
+\newblock Simple distances for trajectories via landmarks.
+\newblock In {\em ACM GIS SIGSPATIAL}, 2019.
+
+\bibitem{WLJL2017}
+Hao Wang, GaoJun Liu, Jianyong Duan, and Lei Zhang.
+\newblock Detecting transportation modes using deep neural network.
+\newblock {\em IEICE Trans. Inf. $\&$ Syst.}, 100:1132--1135, 2017.
+
+\bibitem{ZLCXM2008}
+Yu~Zheng, Yukun Chen, Quannan Li, Xing Xie, and Wei-Ying Ma.
+\newblock Understanding mobility based on gps data.
+\newblock {\em Proceedings of the 10th International Conference on Ubiquitous
+  Computing. ACM}, 100:312--321, 2008.
+
+\bibitem{geolife-gps-trajectory-dataset-user-guide}
+Yu~Zheng, Hao Fu, Xing Xie, Wei-Ying Ma, and Quannan Li.
+\newblock {\em Geolife GPS trajectory dataset - User Guide}, July 2011.
+
+\bibitem{ZLWX}
+Yu. Zheng, Like. Liu, Longhao. Wang, and Xing. Xie.
+\newblock Learning transportation mode from raw gps data for geographic
+  applications on the web.
+\newblock In {\em Proceedings of the 17th International Conference on World
+  Wide Web. ACM}, pages 247--256, 2008.
+
+\end{thebibliography}
